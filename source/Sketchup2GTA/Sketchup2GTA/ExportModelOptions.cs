@@ -29,7 +29,9 @@ namespace Sketchup2GTA
         
         public ExportMode CreateExportMode()
         {
-            return new ModelExportMode(Input, GameVersion.FromGameArgument(Game), Model, Textures, Collision, OutputPath);
+            
+            return new ModelExportMode("./sl_car.skp", GameVersion.FromGameArgument("sa"), true,true, true, "./output");
+            //return new ModelExportMode(Input, GameVersion.FromGameArgument(Game), Model, Textures, Collision, OutputPath);
         }
     }
 }

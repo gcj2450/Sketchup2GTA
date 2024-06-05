@@ -23,7 +23,8 @@ namespace Sketchup2GTA
 
         public ExportMode CreateExportMode()
         {
-            return new MapExportMode(Input, GameVersion.FromGameArgument(Game), OutputPath, ID);
+            return new MapExportMode("./sl_car.skp", GameVersion.FromGameArgument("sa"), "./output", 100);
+            //return new MapExportMode(Input, GameVersion.FromGameArgument(Game), OutputPath, ID);
         }
     }
 }
